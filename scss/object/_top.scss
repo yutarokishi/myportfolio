@@ -1,0 +1,24 @@
+/*---- main visual ----*/
+.top {
+  background-image: url(../image/top_image3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  @include overTab {
+    background-size: 60%;
+    height: 853px;
+    //position: relative;
+  }
+
+  .top-title {
+    font-size: 19px;
+    text-align: center;
+    width: 100%;
+    padding-top: 230px;
+    @include overTab {
+      font-size: 30px;
+      padding-top: 150px;
+    }
+  }
+}

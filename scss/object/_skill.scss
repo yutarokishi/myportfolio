@@ -1,0 +1,43 @@
+/*----- skill -----*/
+.skill {
+  background-color: cl(lightgray);
+  .skill_list {
+    @include overTab {
+      margin-left: 80px;
+    }
+  }
+  .skill-item {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    margin-left: 35px;
+    margin-bottom: 50px;
+    @include overTab {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      //margin-right: 20px;
+      //margin-left: 20px;
+      //margin-bottom: 80px;
+    }
+  }
+  .text {
+    text-align: center;
+    font-size: 18px;
+    @include overTab {
+      font-size: 23px;
+    }
+  }
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include overTab {
+      margin-top: 70px;
+      //box-shadow: 2px 2px 2px 0 silver;
+    }
+  }
+}

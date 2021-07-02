@@ -1,0 +1,21 @@
+.common_title {
+  text-align: center;
+  .main {
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 25px;
+    background: linear-gradient(transparent 95%, #6cf 60%);
+    @include overTab {
+      font-size: 45px;
+      margin-top: 40px;
+    }
+  }
+  .sub {
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+    @include overTab {
+      font-size: 18px;
+    }
+  }
+}

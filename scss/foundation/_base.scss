@@ -1,0 +1,50 @@
+// COLORS
+// @inlcude cl(black);
+//--------------------------------------------------
+
+$colors: (
+  white: #fff,
+  black: #000,
+  text: #464141,
+  orange: #ffb266,
+  lightgrey: #f2f7f7,
+  red: #ff0000,
+  blue: #6cf,
+  lightblue: #efffff,
+  baige: #fffafa,
+  gold: #ffff7f,
+);
+
+@function cl($key) {
+  @return map-get($colors, $key);
+}
+
+// RESPONSIVE
+// @include overTab
+//--------------------------------------------------
+
+@mixin overTab {
+  @media print, screen and (min-width: 745px) {
+    @content;
+  }
+}
+
+// UTILITY
+//--------------------------------------------------
+
+._sp {
+  @include overTab {
+    display: none;
+  }
+}
+
+._pc {
+  display: none;
+  @include overTab {
+    display: block;
+  }
+}
+
+@function vw($width, $px) {
+  @return $px / $width * 100vw;
+}

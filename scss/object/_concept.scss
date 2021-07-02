@@ -1,0 +1,83 @@
+/*----- concept -----*/
+.concept-cont {
+  .concept_list {
+  }
+  .concept_item {
+    display: flex;
+    flex-direction: column-reverse;
+    display: inline-flex;
+    margin-bottom: 60px;
+    @include overTab {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column-reverse;
+      display: inline-flex;
+    }
+
+    &:nth-child(odd) {
+      @include overTab {
+        flex-flow: row-reverse;
+      }
+      .img {
+        @include overTab {
+          margin-left: 180px;
+        }
+      }
+      .text {
+        @include overTab {
+          margin-left: 30px;
+        }
+      }
+    }
+    &:nth-child(even) {
+      @include overTab {
+        flex-flow: row;
+      }
+      .img {
+        @include overTab {
+          margin-right: 180px;
+        }
+      }
+      .text {
+        @include overTab {
+          margin-left: 280px;
+          margin-right: 45px;
+        }
+      }
+    }
+
+    .text {
+      text-align: center;
+      @include overTab {
+        //flex: 1;
+        text-align: left;
+        padding-top: 45px;
+      }
+    }
+    .title {
+      background: linear-gradient(transparent 90%, #6cf 60%);
+      display: inline-block;
+      font-size: 20px;
+      @include overTab {
+        font-size: 25px;
+      }
+    }
+    .describe {
+      font-size: 12px;
+      padding-top: 16px;
+      padding-bottom: 20px;
+      //margin-left: 30px;
+      //margin-right: 30px;
+      text-align: center;
+      @include overTab {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        text-align: left;
+      }
+    }
+    .img {
+      margin: 10px auto 0;
+    }
+  }
+}

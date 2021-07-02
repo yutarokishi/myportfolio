@@ -1,0 +1,29 @@
+/*----- about -----*/
+.about {
+  background-color: cl(lightgray);
+  .inner {
+  }
+  .about_item {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    .text {
+      font-size: 12px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      @include overTab {
+        //order: 2;
+        margin-top: 10px;
+        margin-bottom: 75px;
+      }
+    }
+    .about_img {
+      margin-top: 65px;
+      @include overTab {
+        //order: 1;
+        margin-top: 80px;
+        object-fit: contain;
+      }
+    }
+  }
+}

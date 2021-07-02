@@ -1,0 +1,86 @@
+/*----- service -----*/
+.service {
+  .service-list {
+    margin: 30px auto 0;
+    @include overTab {
+      display: flex;
+      flex-direction: row;
+      margin-left: 70px;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .service_item {
+      display: flex;
+      flex-direction: column-reverse;
+      display: inline-flex;
+      margin-bottom: 50px;
+      @include overTab {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        word-wrap: break-word;
+        margin-right: 42px;
+        margin-left: 42px;
+        margin-bottom: 80px;
+      }
+      .text {
+        text-align: center;
+        @include overTab {
+        }
+        .title {
+          background: linear-gradient(transparent 95%, #6cf 60%);
+          display: inline-block;
+          font-size: 18px;
+          @include overTab {
+            font-size: 25px;
+          }
+        }
+        .describe {
+          font-size: 12px;
+          text-align: center;
+          margin-left: 38px;
+          margin-right: 38px;
+          @include overTab {
+            font-size: 16px;
+            margin-top: 25px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+        .price-title {
+          font-size: 15px;
+          font-weight: bold;
+          background: linear-gradient(transparent 95%, #6cf 60%);
+          display: inline-block;
+          padding-top: 12px;
+        }
+        .price-desc {
+          font-size: 14px;
+          padding-top: 6px;
+        }
+      }
+      .img {
+        margin: 0 auto;
+        margin-top: 45px;
+        @include overTab {
+          margin-top: 70px;
+        }
+      }
+    }
+  }
+  .price-info {
+    font-size: 15px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 35px;
+    @include overTab {
+      font-size: 20px;
+      margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
