@@ -762,7 +762,6 @@ body {
   padding: 5px 10px;
   font-size: 13px;
 }
-
 @media print, screen and (min-width: 745px) {
   .contact .contact_list .contact_form a {
     width: 450px;
